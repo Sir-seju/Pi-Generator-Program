@@ -8,10 +8,10 @@ def player_input():
     while n==0 or n > 1000:
         try:
             n = int(input('To how many decimal places (less than 1000) do you want to find "Pi" in?: '))
-            return n
         except:
             print('Wrong input! enter an integer!')
             continue
+    return n
 
 def pi_generator(n):
     #generate pi to 'n' decimal places
