@@ -7,7 +7,7 @@ def player_input():
     n = 0
     while n==0:
         try:
-            n = int(input('To how many decimal places (less than 1000) do you want to find "Pi" in?: '))
+            n = int(input('To how many decimal places do you want to find "Pi" in?: '))
         except:
             print('Wrong input! enter an integer!')
             continue
@@ -46,7 +46,7 @@ def pi_generator(n,x=0):
 
 def play_again():
     while True:
-        func = input('Play again? "y" / "n": ').upper()
+        func = input('do you want to continue? "y" / "n": ').upper()
         if func!= 'Y' and func != 'N':
             print('Wrong input! choose "y" or "n"!')
             continue
